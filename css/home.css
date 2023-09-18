@@ -1,0 +1,20 @@
+body{
+    background-color: #f8f9fa;
+}
+#header{
+    background-color: rgba(0, 0, 0, .85);
+    backdrop-filter: saturate(180%) blur(10px);
+}
+#header a{
+    color: #999;
+    text-decoration: none;
+}
+#header a img{
+    color: #fff;
+}
+#artesanias{
+    background-repeat: no-repeat;
+}
+#talleres-actividades{
+    width: 100vw;
+}

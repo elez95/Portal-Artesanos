@@ -1,0 +1,28 @@
+#header{
+    background-color: rgba(0, 0, 0, .85);
+    backdrop-filter: saturate(180%) blur(10px);
+}
+#header a{
+    color: #999;
+    text-decoration: none;
+}
+#buscador{
+    width: 70%;
+    margin: auto;
+    margin-top: 2em;
+}
+
+#productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+#producto{
+    display: flex;
+    margin: 1em;
+    width: 30%;;
+}
