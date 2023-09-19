@@ -46,6 +46,8 @@ Los requerimientos son todas las tareas que se necesitan plantear para el desarr
   - Esencial: Son aquellos que son imprescindibles ya que hacen que el sistema tenga sentido.
   - Importante: Son aquellos que no afectan el funcionamiento del sistem, pero lo limitan, por lo cual son útiles y necesarios para el usuario.
   - Deseable: Son aquellos cuya ausencia no afecta de ninguna manera el correcto funcionamiento del sistema, pero que el usuario querría tener si hay tiempo disponible.
+
+[Volver a Tabla de contenidos](#tabla-de-contenidos)
  
 ### Notación
 
@@ -173,6 +175,8 @@ La notación utilizada para detallar un requerimiento se describe a continuació
   </tr>
 </table>
 
+[Volver a Tabla de contenidos](#tabla-de-contenidos)
+
 ## Actores involucrados
 
 - Artesano: Crea publiciones.
@@ -185,6 +189,8 @@ La notación utilizada para detallar un requerimiento se describe a continuació
 - Sistema de ventas externo: Servicio externo al cual se le pide una lista de productos de uno determinado.
 - Sistema de mapas: Muestra la ubicación de los talleres en un mapa.
 - Sistema de direcciones: Normaliza las direcciones ingresadas por los talleres.
+
+[Volver a Tabla de contenidos](#tabla-de-contenidos)
 
 ## Casos de uso
 
@@ -860,9 +866,15 @@ La notación utilizada para detallar un requerimiento se describe a continuació
   </tr>
 </table>
 
+[Volver a Tabla de contenidos](#tabla-de-contenidos)
+
 ## Diagrama de Casos de uso
 
+[Volver a Tabla de contenidos](#tabla-de-contenidos)
+
 ## Diagrama Modelo Conceptual
+
+[Volver a Tabla de contenidos](#tabla-de-contenidos)
 
 ## Arquitectura del software
 
@@ -882,6 +894,8 @@ A continuación, se justificará la organización de los componentes del sistema
 
 Asimismo, se cuenta con dos componentes que se ejecutan de manera automática: relacionado al patrocinio de los talleres, el componente de <b>Vencimiento de patrocinio</b>, que lee el repositorio de facturas e informa mediante el gestor de correos los vencimientos próximos. Finalmente, el componente de <b>Generar reporte</b> es el encargado de recolectar información de los repositorios de Talleres y Publicaciones para enviar esta información al <b>Sistema de revista</b>, estos reportes son guardados en una base de datos llamada <b>Reportes</b> y en caso de ocurrir algún error al momento del envío, estos también son persistidos en el repositorio <b>Errores</b>.
 
+[Volver a Tabla de contenidos](#tabla-de-contenidos)
+
 ## Planificación
 
 El presente proyecto fue elaborado mediante el ciclo de vida denominado <b>"Espiral"/b>. Este modelo se orienta a riesgos, lo cual nos permitió atenderlos de forma temprana en cada iteración del ciclo.
@@ -892,6 +906,8 @@ La planificación optada por el equipo para trabajar en el desarrollo del softwa
 
 De esta manera, con la devolución de cada entrega, el equipo pudo evaluar riesgos y detectar errores a tiempo, antes de realizar la entrega completa del proyecto. Esto es de mucha utilidad para asegurarse de que al entregar el proyecto finalizado se sabrá que funcionará y será de acuerdo con lo solicitado.
 
+[Volver a Tabla de contenidos](#tabla-de-contenidos)
+
 ## Diagrama de Gantt
 
 El diagrama contiene todas las tareas que se realizaron durante el proyecto, separadas por etapas. Dentro de cada etapa se puede observar el tiempo aproximado que se necesitó en cada tarea. También muestra las dependencias de cada tarea y etapa.
@@ -900,3 +916,5 @@ El diagrama contiene todas las tareas que se realizaron durante el proyecto, sep
 - Desarrollo del modelo conceptual: Se empezó asociando todas las entidades con sus actores. Luego se presentó un boceto con las relaciones entre actores y entidades. Después, se encontró toda la información que debe tener cada entidad y el tipo de dato que se iba a usar en la futura codificación. Por último, se diagramó el modelo conceptual.
 - Creación de arquitectura: Se analizó los recursos que van a ser necesarios a nivel hardware y software. Se identificó los escenarios de los actores y las entidades. Se reconoció las herramientas que utilizará cada entidad (interfaz visual, controladores). Por último, se realizó la arquitectura.
 - Prueba de concepto: Se codificó las funcionalidades a su vez que se hacían las pruebas.
+
+[Volver a Tabla de contenidos](#tabla-de-contenidos)
