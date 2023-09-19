@@ -33,6 +33,8 @@ A su vez, el sistema debe recopilar desde un sitio externo una lista de producto
 
 Para finalizar la introducción, este documento tiene como objetivo presentar los detalles del proyecto. Éste contiene los diferentes requerimientos y los actores identificados, con el detalle de su interacción en el sistema.
 
+[Volver a Tabla de contenidos](#tabla-de-contenidos)
+
 ## Requerimientos
 
 Los requerimientos son todas las tareas que se necesitan plantear para el desarrollo de un nuevo software, o la modificación de un software, solicitado por un cliente. Existen diferentes formas de clasificar requerimientos, que se detallan a continuación:
