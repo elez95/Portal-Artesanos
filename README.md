@@ -18,6 +18,7 @@ Portal de artesanos es un proyecto que involucra todos los procesos de la ingeni
 - [Arquitectura del software](#arquitectura-del-software)
 - [Planificación](#planificación)
 - [Diagrama de Gantt](#diagrama-de-gantt)
+- [Logros](#logros)
 
 
 ## Introducción
@@ -47,14 +48,14 @@ Los requerimientos son todas las tareas que se necesitan plantear para el desarr
   - No Funcional: Definen atributos de calidad requeridos y restricciones impuestas sobre el producto.
 - Según su prioridad:
   - Esencial: Son aquellos que son imprescindibles ya que hacen que el sistema tenga sentido.
-  - Importante: Son aquellos que no afectan el funcionamiento del sistem, pero lo limitan, por lo cual son útiles y necesarios para el usuario.
+  - Importante: Son aquellos que no afectan el funcionamiento del sistema, pero lo limitan, por lo cual son útiles y necesarios para el usuario.
   - Deseable: Son aquellos cuya ausencia no afecta de ninguna manera el correcto funcionamiento del sistema, pero que el usuario querría tener si hay tiempo disponible.
 
 [Volver a Tabla de contenidos](#tabla-de-contenidos)
  
 ### Notación
 
-La notación utilizada par clasificar un requerimiento se describe a continuación:
+La notación utilizada para clasificar un requerimiento se describe a continuación:
 
 - <b>RFE:</b> Requerimiento Funcional Esencial.
 - <b>RFI:</b> Requerimiento Funcional Importante.
@@ -926,4 +927,10 @@ El diagrama contiene todas las tareas que se realizaron durante el proyecto, sep
 - Creación de arquitectura: Se analizó los recursos que van a ser necesarios a nivel hardware y software. Se identificó los escenarios de los actores y las entidades. Se reconoció las herramientas que utilizará cada entidad (interfaz visual, controladores). Por último, se realizó la arquitectura.
 - Prueba de concepto: Se codificó las funcionalidades a su vez que se hacían las pruebas.
 
+<img src="https://github.com/elez95/Portal-Artesanos/blob/main/README%20images/diagrama-gantt.jpg" height = "400">
+
 [Volver a Tabla de contenidos](#tabla-de-contenidos)
+
+## Logros
+
+Se pueden destacar muchos puntos importantes acerca de la experiencia ganada en este proyecto, comenzando por el trabajo en equipo y la administración de responsabilidades; la profundización y puesta en práctica de el análisis de requerimientos, arquitectura, prueba de concepto y planificación de el desarrollo del software; la utilización de herramientas y técnicas como diagramas UML para los casos de uso, modelo conceptual, arquitectura y diagrama de Gantt. Se puede concluir el valor fundamental de una robusta documentación para un buen desarrollo, mantenimiento y evolución del software.
