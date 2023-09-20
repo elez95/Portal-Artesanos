@@ -1,8 +1,11 @@
+![Header](https://github.com/elez95/Portal-Artesanos/blob/main/README%20images/header-portal.jpg)
 # Portal Artesanos
 
 Documentación y aplicación realizada como parte del proyecto de la materia Ingeniería del Software del segundo año de la carrera Licenciatura en Sistemas de la Universidad Nacional General Sarmiento.
 
 Portal de artesanos es un proyecto que involucra todos los procesos de la ingeniería del software (análisis de requerimientos, arquitectura, prueba de concepto, planificación), junto con ciclos de vida y metodologías ágiles. Este README tiene como prioridad mostrar la resolución del proyecto que fue requerido [(Click para ver)](https://drive.google.com/file/d/1JqYibAGpE3QlDGO-dWokaaCOOjW_zS4N/view?usp=sharing). Por lo tanto la documentación del código de la aplicación no es presentada, porque el objetivo principal del proyecto era poner en práctica los conceptos de la ingeniería del software.
+
+<img src="https://github.com/elez95/Portal-Artesanos/blob/main/README%20images/Captura.jpg" height = "400">
 
 ## Tabla de contenidos
 
@@ -870,9 +873,13 @@ La notación utilizada para detallar un requerimiento se describe a continuació
 
 ## Diagrama de Casos de uso
 
+<img src="https://github.com/elez95/Portal-Artesanos/blob/main/README%20images/Casos-de-uso.jpg" height = "500">
+
 [Volver a Tabla de contenidos](#tabla-de-contenidos)
 
 ## Diagrama Modelo Conceptual
+
+<img src="https://github.com/elez95/Portal-Artesanos/blob/main/README%20images/Modelo-conceptual.jpg" height = "500">
 
 [Volver a Tabla de contenidos](#tabla-de-contenidos)
 
@@ -893,6 +900,8 @@ A continuación, se justificará la organización de los componentes del sistema
 <b>UI REPRESENTANTE:</b> Es la vista del representante de taller. Interactúa con el componente <b> Gestión de taller</b> que autentica los usuarios y administra el registro de los nuevos talleres para persistir sus datos en el repositorio <b>Talleres</b>, al momento de un registro se realiza una comunicación con el <b>Sistema de normalización</b> para normalizar la dirección del taller. También se comunica con el componente <b>Publicar</b> que es el encargado de dar a conocer los productos y actiidades que el taller desee. Por último, se relaciona con el componente <b>Patrocinar taller</b>, el cual se divide en los componentes <b>Generar factura</b>, que crea la factura para el pago pidiendo un código de autenticación al Sistema de pagos para luego guardarlas en una base de datos llamada Facturas, y el componente <b>Destacar</b>, al cual el Sistemas de pagos le informa los pagos realizados y este escribe en el repositorio de talleres para asignar a un taller como destacado.
 
 Asimismo, se cuenta con dos componentes que se ejecutan de manera automática: relacionado al patrocinio de los talleres, el componente de <b>Vencimiento de patrocinio</b>, que lee el repositorio de facturas e informa mediante el gestor de correos los vencimientos próximos. Finalmente, el componente de <b>Generar reporte</b> es el encargado de recolectar información de los repositorios de Talleres y Publicaciones para enviar esta información al <b>Sistema de revista</b>, estos reportes son guardados en una base de datos llamada <b>Reportes</b> y en caso de ocurrir algún error al momento del envío, estos también son persistidos en el repositorio <b>Errores</b>.
+
+<img src="https://github.com/elez95/Portal-Artesanos/blob/main/README%20images/Arquitectura.jpg" height = "500">
 
 [Volver a Tabla de contenidos](#tabla-de-contenidos)
 
