@@ -79,17 +79,17 @@ La notación utilizada para detallar un requerimiento se describe a continuació
 <table border="1">
   <tr>
     <th>1</th>
-    <th><b>El visitante se registra en el sistema. </b> <br> Un visitante puede ser un artesano. Los datos que debe ingresar para registrarse son: Nombre, teléfono y correo electrónico. Debe indicar si representa un taller. Si tiene un taller a su nombre debe indicar el nombre, descripción del lugar, categoría a la que pertenece, actividades que ofrece, la dirección del lugar, rango horario, número de teléfono, una foto </th>
+    <th><b>El visitante se registra en el sistema. </b> <br> Un visitante puede ser un artesano. Los datos que debe ingresar para registrarse son: Nombre, teléfono y correo electrónico. Debe indicar si representa un taller. Si tiene un taller a su nombre debe indicar el nombre, descripción del lugar, categoría a la que pertenece, actividades que ofrece, la dirección del lugar, rango horario, número de teléfono, una foto. </th>
     <th><b> RFE </b></th>
   </tr>
    <tr>
     <th>2</th>
-    <th> <b>El artesano crea una publicación.</b> <br> Un artesano puede crear una publicación de su producto. Los datos para crear una publicación son: Detalles del producto, tipo de publicación y datos de contacto. Una vez finalizado, la publicaión queda pendiente de aprobación. </th>
+    <th> <b>El artesano crea una publicación.</b> <br> Un artesano puede crear una publicación de su producto. Los datos para crear una publicación son: Detalles del producto, tipo de publicación y datos de contacto. Una vez finalizado, la publicación queda pendiente de aprobación. </th>
     <th><b> RFE</b></th>
   </tr>
    <tr>
     <th>3</th>
-    <th><b> El sistema busca productos similares a la publicación. </b> <br> El sistema debe sugerir al artesano diferentes precios relacionados con el producto que publicará. Para ello debe recopilar una lista de productos similares desde un sitio externo. De esta manera el artesano puede compara precios para asegurarse que publica un precio justo. </th>
+    <th><b> El sistema busca productos similares a la publicación. </b> <br> El sistema debe sugerir al artesano diferentes precios relacionados con el producto que publicará. Para ello debe recopilar una lista de productos similares desde un sitio externo. De esta manera el artesano puede comparar precios para asegurarse que publica un precio justo. </th>
     <th><b> RFI</b></th>
   </tr>
    <tr>
@@ -184,7 +184,7 @@ La notación utilizada para detallar un requerimiento se describe a continuació
 ## Actores involucrados
 
 - Artesano: Crea publiciones.
-- Representante de taller: Patrocina el porta.
+- Representante de taller: Patrocina el portal.
 - Visitante: Se registra en el portal. Busca artículos.
 - Moderador: Autentica registro de artesanos. Aprueba publicaciones. Aprueba inscripción de representación de taller. Revisa fallos de exportación.
 - Sistemas de pagos (RapiFacil): Servicio externo al cual se le solicita un código de comprobante y luego confirma el pago junto con los datos.
@@ -356,7 +356,7 @@ La notación utilizada para detallar un requerimiento se describe a continuació
 
 <table border="1">
   <tr>
-    <td colspan="2"><b>Caso de uso</b>: CU4. Patrocinar en el portar.</td>
+    <td colspan="2"><b>Caso de uso</b>: CU4. Patrocinar en el portal.</td>
   </tr>
   <tr>
     <td colspan="2"><b>Actor:</b> Representante de taller. </td>
@@ -614,7 +614,7 @@ La notación utilizada para detallar un requerimiento se describe a continuació
     <td></td>
   </tr>
   <tr>
-    <td colspan="2"><b>Detalle:</b> Se alertará al sistema de correos 72 horas antes del cumplimiento de los 30 días. E mail que recibirán los talleres contendrá el mensaje: "Tu patrocinio vence el [ingresar vencimiento]".</td>
+    <td colspan="2"><b>Detalle:</b> Se alertará al sistema de correos 72 horas antes del cumplimiento de los 30 días. El mail que recibirán los talleres contendrá el mensaje: "Tu patrocinio vence el [ingresar vencimiento]".</td>
   </tr>
 </table>
 
@@ -658,7 +658,7 @@ La notación utilizada para detallar un requerimiento se describe a continuació
     <td></td>
   </tr>
   <tr>
-    <td colspan="2"><b>Detalle:</b> Las búsquedas en el ortal no distinguen entre minúsculas y mayúsculas. Mínimo se deberán ingresar 3 caracteres para realizar una búsqueda.</td>
+    <td colspan="2"><b>Detalle:</b> Las búsquedas en el portal no distinguen entre minúsculas y mayúsculas. Mínimo se deberán ingresar 3 caracteres para realizar una búsqueda.</td>
   </tr>
 </table>
 
@@ -691,7 +691,7 @@ La notación utilizada para detallar un requerimiento se describe a continuació
   </tr>
   <tr>
     <td>2. Todos los meses, la información es enviada a un sistema externo.</td>
-    <td>2.1.  En cado de fallo, <b>ir a CU13</b></td>
+    <td>2.1.  En caso de fallo, <b>ir a CU13</b></td>
   </tr>
   <tr>
     <td>3. Se confirma el envío sin problemas.</td>
