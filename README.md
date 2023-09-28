@@ -698,17 +698,17 @@ La notación utilizada para detallar un requerimiento se describe a continuació
     <td></td>
   </tr>
   <tr>
-    <td>4.Fin Caso de Uso.</td>
+    <td>4. Fin Caso de Uso.</td>
     <td></td>
   </tr>
   <tr>
-    <td colspan="2"><b>Detalle:</b>La información será enviada el primer día de cada mes.</td>
+    <td colspan="2"><b>Detalle:</b> La información será enviada el primer día de cada mes.</td>
   </tr>
 </table>
 
 <table border="1">
   <tr>
-    <td colspan="2"><b>Caso de uso</b>: CU12.Buscar productos similares.</td>
+    <td colspan="2"><b>Caso de uso</b>: CU12. Buscar productos similares.</td>
   </tr>
   <tr>
     <td colspan="2"><b>Actor:</b> Sistema de ventas</td>
@@ -730,7 +730,7 @@ La notación utilizada para detallar un requerimiento se describe a continuació
     <td><b>Alternativas</b></td>
   </tr>
   <tr>
-    <td>1.Un artesano comienza a crear una publicación.</td>
+    <td>1. Un artesano comienza a crear una publicación.</td>
     <td></td>
   </tr>
   <tr>
@@ -750,7 +750,7 @@ La notación utilizada para detallar un requerimiento se describe a continuació
     <td></td>
   </tr>
   <tr>
-    <td colspan="2"><b>Detalle:</b>La lista presentada será de máximo 5 productos.</td>
+    <td colspan="2"><b>Detalle:</b> La lista presentada será de máximo 5 productos.</td>
   </tr>
 </table>
 
@@ -778,7 +778,7 @@ La notación utilizada para detallar un requerimiento se describe a continuació
     <td><b>Alternativas</b></td>
   </tr>
   <tr>
-    <td>1. El sistema recopila el reporta de fallos de envío.</td>
+    <td>1. El sistema recopila el reporte de fallos de envío.</td>
     <td></td>
   </tr>
   <tr>
@@ -808,7 +808,7 @@ La notación utilizada para detallar un requerimiento se describe a continuació
     <td colspan="2"><b>Requerimientos asociados:</b> 10, 11.</td>
   </tr>
   <tr>
-    <td colspan="2"><b>Precondición:</b> La factura debe tener el código único de comprobante</td>
+    <td colspan="2"><b>Precondición:</b> La factura debe tener el código único de comprobante.</td>
   </tr>
   <tr>
     <td colspan="2"><b>Postcondición:</b> Pago confirmado.</td>
@@ -888,7 +888,7 @@ La notación utilizada para detallar un requerimiento se describe a continuació
 
 La arquitectura tiene como objetivo definir la estructura del sistema. Esta estructura está constituida por componentes (piezas de código) que cumplen ciertas funciones específicas. Estos componentes no están detallados, en su lugar, representan una funcionalidad abstracta de alto nivel, que a su vez concluirá en una o más interacciones con otros componentes del sistema.
 
-Del mismo modo, la arquitectura plantea la solución al los atributos de calidad. Hace tangible las características de escalabilidad, confiabilidad, eficiencia, y modificabilidad, demostrando que se cumple con cada una de ellas.
+Del mismo modo, la arquitectura plantea la solución a los atributos de calidad. Hace tangible las características de escalabilidad, confiabilidad, eficiencia, y modificabilidad, demostrando que se cumple con cada una de ellas.
 
 A continuación, se justificará la organización de los componentes del sistema.
 
@@ -898,7 +898,7 @@ A continuación, se justificará la organización de los componentes del sistema
 
 <b>UI MODERADOR:</b> Es la interfaz visual del moderador. Esta interfaz interactúa con el componente <b>Gestionar</b>, que se encarga de autenticar y aprobar los talleres y publicaciones, también este se relaciona con el componente <b>Gestor de correos</b> en casos de rechazos, el cual se comunica mediante una relación cliente-servidor con el Sistemas de correos para enviarles los correos a los usuarios. Además, asigna como miembro confiable a los artesanos que desee. Todas estas acciones son con las interacciones con las bases de datos <b>Publicaciones, Talleres</b> y <b>Artesanos</b>. El moderador también se relaciona con el componente generar reporte para realizar esta acción en caso de que ocurra algún error con el envío automático.
 
-<b>UI REPRESENTANTE:</b> Es la vista del representante de taller. Interactúa con el componente <b> Gestión de taller</b> que autentica los usuarios y administra el registro de los nuevos talleres para persistir sus datos en el repositorio <b>Talleres</b>, al momento de un registro se realiza una comunicación con el <b>Sistema de normalización</b> para normalizar la dirección del taller. También se comunica con el componente <b>Publicar</b> que es el encargado de dar a conocer los productos y actiidades que el taller desee. Por último, se relaciona con el componente <b>Patrocinar taller</b>, el cual se divide en los componentes <b>Generar factura</b>, que crea la factura para el pago pidiendo un código de autenticación al Sistema de pagos para luego guardarlas en una base de datos llamada Facturas, y el componente <b>Destacar</b>, al cual el Sistemas de pagos le informa los pagos realizados y este escribe en el repositorio de talleres para asignar a un taller como destacado.
+<b>UI REPRESENTANTE:</b> Es la vista del representante de taller. Interactúa con el componente <b> Gestión de taller</b> que autentica los usuarios y administra el registro de los nuevos talleres para persistir sus datos en el repositorio <b>Talleres</b>, al momento de un registro se realiza una comunicación con el <b>Sistema de normalización</b> para normalizar la dirección del taller. También se comunica con el componente <b>Publicar</b> que es el encargado de dar a conocer los productos y actividades que el taller desee. Por último, se relaciona con el componente <b>Patrocinar taller</b>, el cual se divide en los componentes <b>Generar factura</b>, que crea la factura para el pago pidiendo un código de autenticación al Sistema de pagos para luego guardarlas en una base de datos llamada Facturas, y el componente <b>Destacar</b>, al cual el Sistemas de pagos le informa los pagos realizados y este escribe en el repositorio de talleres para asignar a un taller como destacado.
 
 Asimismo, se cuenta con dos componentes que se ejecutan de manera automática: relacionado al patrocinio de los talleres, el componente de <b>Vencimiento de patrocinio</b>, que lee el repositorio de facturas e informa mediante el gestor de correos los vencimientos próximos. Finalmente, el componente de <b>Generar reporte</b> es el encargado de recolectar información de los repositorios de Talleres y Publicaciones para enviar esta información al <b>Sistema de revista</b>, estos reportes son guardados en una base de datos llamada <b>Reportes</b> y en caso de ocurrir algún error al momento del envío, estos también son persistidos en el repositorio <b>Errores</b>.
 
@@ -908,7 +908,7 @@ Asimismo, se cuenta con dos componentes que se ejecutan de manera automática: r
 
 ## Planificación
 
-El presente proyecto fue elaborado mediante el ciclo de vida denominado <b>"Espiral"/b>. Este modelo se orienta a riesgos, lo cual nos permitió atenderlos de forma temprana en cada iteración del ciclo.
+El presente proyecto fue elaborado mediante el ciclo de vida denominado <b>"Espiral"</b>. Este modelo se orienta a riesgos, lo cual nos permitió atenderlos de forma temprana en cada iteración del ciclo.
 
 Mediante este modelo se dividió el trabajo en "Mini-proyectos" que pretendían atender a los riesgos más importantes, realizando entregas parciales de los mismos que permitieron verificar el camino correcto en el desarrollo del sistema solicitado.
 
